@@ -6,7 +6,7 @@ import {
   TouchableOpacity,
   View
 } from 'react-native';
-import { SafeAreaView } from 'react-native-sade-area-context'
+import { SafeAreaView } from 'react-native-safe-area-context'
 import { router } from 'expo-router';
 
 const menuData = [
