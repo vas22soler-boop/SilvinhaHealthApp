@@ -95,3 +95,88 @@ export default function ImcScreen() {
         </SafeAreaView>
     );
 }
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        backgroundColor: '#f9f9f9'
+    },
+    scrollContent: {
+        flexGrow: 1,
+    }, content: {
+        padding: 20
+    },
+    title: {
+        fontSize: 28,
+        fontWeight: 'bold',
+        marginBottom: 10,
+        textAlign: 'center',
+        color: '#FF6B6B'
+    },
+    description: {
+        fontSize: 14,
+        color: '#666',
+        textAlign: 'center',
+        marginBottom: 30,
+        lineHeight: 20,
+    },
+    inputGroup: {
+        marginBottom: 20,
+    },
+    label: {
+        fontSize: 16,
+        fontWeight: '600',
+        color: '#333',
+        marginBottom: 5,
+    },
+    input: {
+        backgroundColor: '#fff',
+        padding: 15,
+        borderRadius: 10,
+        fontSize: 16,
+        borderWidth: 1,
+        borderColor: '#ddd',
+    },
+    button: {
+        backgroundColor: '#FF6B6B',
+        padding: 18,
+        borderRadius: 10,
+        alignItems: 'center',
+        marginTop: 10,
+        shadowColor: '#FF6B6B',
+        shadowOffset: { width: 0, height: 4 },
+        shadowOpacity: 0.3,
+        shadowRadius: 5,
+        elevation: 5,
+    },
+    buttonText: {
+        color: '#fff',
+        fontSize: 18,
+        fontWeight: '600'
+    },
+    resultBox: {
+        marginTop: 30,
+        padding: 25,
+        backgroundColor: '#fff',
+        borderRadius: 15,
+        alignItems: 'center',
+        borderWidth: 2,
+        borderColor: '#FF6B6B',
+    }, resultTitle: {
+        fontSize: 18,
+        color: '#666',
+        marginBottom: 10,
+    },
+    resultValue: {
+        fontSize: 48,
+        fontWeight: 'bold',
+        color: '#FF6B6B',
+        marginBottom: 10,
+    },
+    resultClassification: {
+        fontSize: 20,
+        color: '#333',
+        textAlign: 'center',
+        fontWeight: '600',
+    },
+});
