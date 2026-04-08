@@ -1,19 +1,3 @@
-const [sexo, setSexo] = useState(null);
-<TouchableOpacity
-    style={[
-        styles.sexButton,
-        sexo === 'masculino' && styles.sexButtonSelected,
-    ]}
-    onPress={() => setSexo('masculino')}
->
-    <Text style={styles.sexIcon}>👨</Text>
-    <Text style={[
-        styles.sexText,
-        sexo === 'masculino' && styles.sexTextSelected
-    ]}>
-        Masculino
-    </Text>
-</TouchableOpacity>
 import React, { useState } from 'react';
 import {
     View,

@@ -1,22 +1,3 @@
-const [peso, setPeso] = useState('');
-const [altura, setAltura] = useState('');
-const [resultado, setResultado] = useState(null);
-
-const handleCalcular = () => {
-    if (!peso || !altura) {
-        Alert.alert('Erro', 'Preencha todos os campos!');
-        return;
-    }
-    const pesoNum = parseFloat(peso.replace(',', '.'));
-    const alturaNum = parseFloat(altura.replace(',', '.'));
-    if (isNaN(pesoNum) || isNaN(alturaNum) || pesoNum <= 0 || alturaNum
-        <= 0) {
-        Alert.alert('Erro', 'Digite valores válidos (maiores que zero).');
-        return;
-    }
-    const resultadoIMC = calcularIMC(pesoNum, alturaNum);
-    setResultado(resultadoIMC);
-};
 import React, { useState } from 'react';
 import {
     View, Text, TextInput, TouchableOpacity,
